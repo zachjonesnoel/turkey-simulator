@@ -1,0 +1,179 @@
+.step-card {
+  background: #fff;
+  border: 2px solid #f0f0f0;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.step-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.step-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.step-phase {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.step-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.step-description {
+  margin-bottom: 1.5rem;
+}
+
+.step-description p {
+  color: #666;
+  font-size: 1.1rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.step-instructions {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.step-instructions h4 {
+  margin: 0 0 0.75rem 0;
+  color: #d2691e;
+  font-size: 1.1rem;
+}
+
+.step-instructions p {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.step-progress {
+  margin-bottom: 1.5rem;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.progress-header span:first-child {
+  font-weight: bold;
+  color: #333;
+}
+
+.progress-header span:last-child {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.progress-bar {
+  height: 12px;
+  background: #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 6px;
+  transition: width 0.3s ease;
+}
+
+.progress-percentage {
+  text-align: center;
+  font-weight: bold;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.temperature-info {
+  background: linear-gradient(45deg, #ff6b35, #f7931e);
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.temp-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.temp-label {
+  font-weight: 500;
+}
+
+.temp-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.step-actions {
+  text-align: center;
+}
+
+.complete-button {
+  background: linear-gradient(45deg, #4CAF50, #8BC34A);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-weight: bold;
+}
+
+.complete-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+}
+
+.timer-display {
+  padding: 1rem;
+  background: #fff3cd;
+  border: 2px solid #ffeaa7;
+  border-radius: 10px;
+  color: #856404;
+  font-weight: bold;
+}
+
+.timer-display span {
+  font-size: 1.1rem;
+}
+
+.real-duration {
+  text-align: center;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background: #e3f2fd;
+  border-radius: 6px;
+  border-left: 3px solid #2196F3;
+}
+
+.real-duration small {
+  color: #1976d2;
+  font-weight: 500;
+}

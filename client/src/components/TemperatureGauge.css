@@ -1,0 +1,134 @@
+.temperature-gauge {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 15px;
+  border: 2px solid #e9ecef;
+}
+
+.temperature-gauge h3 {
+  margin: 0 0 1.5rem 0;
+  color: #d2691e;
+  text-align: center;
+}
+
+.gauge-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  height: 200px;
+}
+
+.gauge-background {
+  position: relative;
+  width: 40px;
+  height: 180px;
+  background: #e0e0e0;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.gauge-fill {
+  width: 100%;
+  border-radius: 0 0 20px 20px;
+  transition: height 0.5s ease, background-color 0.3s ease;
+}
+
+.target-line {
+  position: absolute;
+  left: -10px;
+  right: -10px;
+  height: 2px;
+  background: #ff4444;
+  z-index: 2;
+}
+
+.target-line::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: -3px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 8px solid #ff4444;
+}
+
+.target-label {
+  position: absolute;
+  left: 50px;
+  top: -10px;
+  background: #ff4444;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.gauge-scale {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 180px;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.scale-mark {
+  position: relative;
+  padding-left: 0.5rem;
+}
+
+.temperature-display {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.current-temp {
+  margin-bottom: 0.5rem;
+}
+
+.temp-value {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.temp-status {
+  display: block;
+  font-size: 1rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.target-temp {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.temperature-tips {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  border-left: 4px solid #ff6b35;
+}
+
+.temperature-tips h4 {
+  margin: 0 0 0.5rem 0;
+  color: #d2691e;
+  font-size: 1rem;
+}
+
+.temperature-tips p {
+  margin: 0;
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
